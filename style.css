@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main{
+    background-image: url("assests/image/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    z-index: 10;
+}
+
+.main .box{
+    width: 100vw;
+    height: 70vh;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+nav{
+    display: flex;
+    max-width: 80vw;   
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    z-index: 1000;
+    padding: 10px;
+}
+
+button{
+    padding: 3px;
+    font-size: large;
+    font-weight: 400
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 101;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.text .heading{
+    font-size: 60px;
+}
