@@ -37,11 +37,11 @@ nav{
 
 button{
     padding: 3px;
-    font-size: large;
+    font-size: smaller;
     font-weight: 400
 }
 
-.text{
+.hero{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -50,9 +50,16 @@ button{
     align-items: center;
     justify-content: center;
     height: 100%;
+    gap: 8px;
+}   
 
+.hero .heading{
+    font-size: 60px;
+    margin: 2px;   
 }
 
-.text .heading{
-    font-size: 60px;
+.hero input{
+    font-size: 20px;
+    padding: 2px;
+    margin-top: 40px;
 }
