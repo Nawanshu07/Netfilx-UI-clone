@@ -99,7 +99,7 @@ nav img{
 .seperator{
     height: 10px;
     background-color: rgb(61, 60, 60);
-    width: 100vw;
+    width: 100%;
 }
 
 .btn-red{
@@ -118,10 +118,34 @@ nav img{
 
 .first{
     display: flex;
-    height: 200px;
+    height: 60vh;
     color: white;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    
-}   
+    width: 60vw;
+}
+
+.secImg{
+    display: flex;
+    max-width: 60vw;
+    height: auto;
+    position: relative;
+}
+
+.secImg img{
+    position: relative;
+}
+
+.secImg video{
+    position: absolute;
+    top: 20%;
+    left: 13.5%;
+    width: 78%;
+}
+
+.first span{
+    font-size: 50px;
+    font-weight: 900;
+}
+
