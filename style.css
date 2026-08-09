@@ -35,7 +35,7 @@ nav{
     justify-content: space-between;
     margin: auto;
     position: relative;
-    z-index: 1000;
+    z-index: 100;
     padding: 10px;
     height: 60px;
 }
@@ -135,6 +135,7 @@ nav img{
 
 .secImg img{
     position: relative;
+    z-index: 100;
 }
 
 .secImg video{
@@ -142,10 +143,21 @@ nav img{
     top: 20%;
     left: 13.5%;
     width: 78%;
+    z-index: 10;
 }
 
 .first span{
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 900;
 }
 
+.text_content{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.text_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
