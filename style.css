@@ -1,8 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .main{
     background-image: url("assests/image/bg.jpg");
@@ -164,7 +170,7 @@ nav img{
 
 
 .faq{
-    height: 60vh;
+    height: auto;
     color: white;
     display: flex;
     justify-content: flex-start;
@@ -174,6 +180,7 @@ nav img{
     font-size: 34px;
     padding-top: 20px;
     gap: 10px;
+    margin-bottom: 30px;
 }
 
 .faqbox svg {
@@ -201,4 +208,106 @@ nav img{
 
 .question{
     font-size: 24px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    color: rgba(255, 255, 255, 0.762);
+    padding: 100px 0;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 15px;
+    box-sizing: border-box;
+    justify-items: start;
+}
+
+footer{
+    width: 90%;
+    margin: auto;
+}
+
+.footer-column{
+text-align: left;
+}
+
+@media (max-width: 768px) {
+    .first {
+        flex-direction: column;  
+        height: auto;
+        width: 90vw;
+        padding: 20px 0;
+    }
+    
+    .secImg {
+        max-width: 90vw;
+    }
+
+     .question_box {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+    .question {
+        font-size: 16px;
+    }
+    .faq {
+        font-size: 22px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+     .footer {
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 40px 20px;
+    }
+
+    .hero .buttons {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .hero input {
+        padding: 10px;
+        width: 100%;
+    }
+
+    nav .buttons{
+        margin: 5px;
+    }
+
+    .main, .main .box{
+        height: auto;
+        min-height: 70vh;
+    }
+    .hero .heading{
+        font-size: 32px;
+    }
+
+    .hero span{
+        font-size: 16px;
+    }
+
+    .first span {
+        font-weight: 800;
+        font-size: 28px; 
+        text-align: center;
+    }
+    
+    .text_content {
+        font-size: 18px; 
+        text-align: center;
+    }
+    
+    .text_box {
+        align-items: center;
+    }
+
+    .hero .buttons {
+        flex-direction: column;
+        margin: 10px;
+        width: 90%; }
+    
+    .hero .btn-red {
+        width: 100%; 
+    }
 }
